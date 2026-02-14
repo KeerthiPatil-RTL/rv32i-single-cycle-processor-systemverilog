@@ -1,5 +1,5 @@
 module INSTRUCTION_MEMORY #(parameter ADDR_WIDTH = 7, parameter DATA_WIDTH = 8)
-                          (input logic imem_reg , 
+                         (input logic imem_req , 
                           input logic [31:0] imem_addr,
                           output logic [31:0] imem_data);
 
@@ -9,11 +9,11 @@ $readmemh ("machine_code.mem",mem);
 end
 
 always_comb begin  
-if(imem_reg) begin
+  if(imem_req) begin
 imem_data = { mem[imem_addr],mem[imem_addr + 1],mem[imem_addr + 2],mem[imem_addr + 3] };
 end
 else begin 
 imem_data = 32'd0;
 end  
 end
-endmodule  
+endmodule    
