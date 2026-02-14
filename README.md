@@ -17,7 +17,7 @@ The processor follows a classic single-cycle architecture where each instruction
            <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv"> **instruction_memory.sv** </a>    
            <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> **instruction_memory_block** </a>    
            <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> **instruction_memory_unit** </a>
-### Instruction Fetch     
+### Instruction Fetch            
   <a href = "FETCH/FETCH.sv"> **RTL Module**  fetch.sv </a>        
   <a href = "FETCH/FETCH_BLOCK.png">  **Block Diagram** fetch_block </a>       
   <a href = "FETCH/FETCH_UNIT.png"> **Internal Architecture**  fetch_unit </a>     
