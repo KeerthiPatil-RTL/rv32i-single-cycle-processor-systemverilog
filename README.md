@@ -15,9 +15,9 @@ The processor follows a classic single-cycle architecture where each instruction
 ## Datapath Blocks Implemented
 - Program Counter with branch/jump update logic   
 - Instruction Memory  
-           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv"> INSTRUCTION_MEMORY.sv </a>    
-           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> INSTRUCTION_MEMORY_BLOCK </a>    
-           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> INSTRUCTION_MEMORY_UNIT </a>   
+           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv"> instruction_memory.sv </a>    
+           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> instruction_memory_block </a>    
+           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> instruction_memory_unit </a>   
 - Control Unit (opcode, funct3, funct7 decoding)
 - 32 × 32 Register File
 - Immediate Generator
