@@ -14,7 +14,10 @@ The processor follows a classic single-cycle architecture where each instruction
 
 ## Datapath Blocks Implemented
 - Program Counter with branch/jump update logic
-- Instruction Memory  <a href = "https://github.com/KeerthiPatil-RTL/Cadence-Virtuoso-Projects/blob/b46559fff5da700f8d139dbc72d92d851128b159/UNIX%20commands/Report.md">UNIX Commands</a> 
+- Instruction Memory
+         - <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv"> INSTRUCTION_MEMORY.sv </a>
+         - <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> INSTRUCTION_MEMORY_BLOCK </a>
+         - <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> INSTRUCTION_MEMORY_UNIT </a>
 - Control Unit (opcode, funct3, funct7 decoding)
 - 32 × 32 Register File
 - Immediate Generator
