@@ -15,6 +15,6 @@ req_reg <= 1'b1;
 end 
 end  
 assign imem_addr = pc;
-assign req_reg = imem_req;
+assign imem_req = req_reg;
 assign instruction = imem_data;
 endmodule
