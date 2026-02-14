@@ -12,12 +12,15 @@ The processor follows a classic single-cycle architecture where each instruction
 <img width="1058" height="428" alt="pipeline" src="https://github.com/user-attachments/assets/ab226992-3aa3-49a5-bc88-21a33afd2687" />   
 
 
-## Datapath Blocks Implemented
-- Program Counter with branch/jump update logic   
+## Microarchitecture Blocks Implemented  
 - Instruction Memory  
            <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv"> instruction_memory.sv </a>    
            <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> instruction_memory_block </a>    
-           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> instruction_memory_unit </a>   
+           <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> instruction_memory_unit </a>
+- Instruction Fetch 
+           **RTL Module**   <a href = "FETCH/FETCH.sv"> fetch.sv </a>    
+           **Block Diagram**  <a href = "FETCH/FETCH_BLOCK.png"> fetch_block </a>    
+           **Internal Architecture**  <a href = "FETCH/FETCH_UNIT.png"> fetch_unit </a>     
 - Control Unit (opcode, funct3, funct7 decoding)
 - 32 × 32 Register File
 - Immediate Generator
