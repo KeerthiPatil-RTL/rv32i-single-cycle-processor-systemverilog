@@ -27,21 +27,21 @@ Internal Architecture <a href = "FETCH/FETCH_UNIT.png"> fetch_unit </a>
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### DECODE             
+### Decode            
 RTL Module <a href = "DECODE/DECODE.sv"> Decode.sv </a>        
 Block Diagram <a href = "DECODE/DECODE_STAGE_BLOCK.png"> Decode_block </a>       
 Internal Architecture <a href = "DECODE/DECODE_BLOCK_UNIT.png"> Decode_unit </a>          
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### REGISTERFILE             
+### Register File             
 RTL Module <a href = "REGISTER_FILE/REGISTER_FILE.sv"> Register_file.sv </a>        
 Block Diagram <a href = "REGISTER_FILE/REGISTER_FILE.png"> Register_file_block </a>       
 Internal Architecture <a href = "REGISTER_FILE/REGISTER_FILE_UNIT.png"> Register_file_unit </a>          
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### EXECUTE ( ALU )           
+### Execute ( ALU )           
 RTL Module <a href = "ALU/ALU.sv"> ALU.sv </a>        
 Block Diagram <a href = "ALU/ALU_BLOCK.png"> ALU_block </a>       
 Internal Architecture <a href = "ALU/ALU_UNIT.png"> ALU_unit </a>          
