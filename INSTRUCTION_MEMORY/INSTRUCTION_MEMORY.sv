@@ -1,19 +1,20 @@
-module INSTRUCTION_MEMORY #(parameter ADDR_WIDTH = 7, parameter DATA_WIDTH = 8)
-                         (input logic imem_req , 
+`timescale 1ns / 1ps
+module instruction_memory #(parameter ADDR_WIDTH = 7, parameter DATA_WIDTH = 8)
+                          (input logic imem_req , 
                           input logic [31:0] imem_addr,
-                          output logic [31:0] imem_data);
+                            output logic [31:0] imem_data);
 
-logic [DATA_WIDTH -1 :0] mem [ 0: (2 * ADDR_WIDTH)-1];
+logic [DATA_WIDTH -1 :0] mem [ 0: (2 ** ADDR_WIDTH)-1];
 initial begin
 $readmemh ("machine_code.mem",mem);
 end
 
 always_comb begin  
-  if(imem_req) begin
-imem_data = { mem[imem_addr],mem[imem_addr + 1],mem[imem_addr + 2],mem[imem_addr + 3] };
+if(imem_req) begin
+imem_data = { mem[imem_addr + 3],mem[imem_addr + 2],mem[imem_addr + 1],mem[imem_addr]};
 end
 else begin 
 imem_data = 32'd0;
 end  
 end
-endmodule    
+endmodule  
