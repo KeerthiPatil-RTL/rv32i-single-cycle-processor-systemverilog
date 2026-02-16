@@ -46,11 +46,17 @@ RTL Module <a href = "ALU/ALU.sv"> ALU.sv </a>
 Block Diagram <a href = "ALU/ALU_BLOCK.png"> ALU_block </a>       
 Internal Architecture <a href = "ALU/ALU_UNIT.png"> ALU_unit </a>          
 
+------------------------------------------------------------------------------------------------------------------   
+
+### Data Memory      
+RTL Module <a href = "DATA_MEMORY/DATA_MEMORY.sv"> Data_Memory.sv </a>        
+Block Diagram <a href = "DATA_MEMORY/DATA_,MEMORY_BLOCK.png"> Data_Memory </a>       
+Internal Architecture <a href = "DATA_MEMORY/DATA_,MEMORY_UNIT.png"> Data_Memory </a>    
 
 - Control Unit (opcode, funct3, funct7 decoding)
 32 × 32 Register File      
 - Immediate Generator
-- ALU (Arithmetic, Logical, Shift operations)   
+- ALU (Arithmetic, Logical, Shift operations)     
 - Branch Comparator
 - Data Memory Interface
 - Writeback Multiplexer
