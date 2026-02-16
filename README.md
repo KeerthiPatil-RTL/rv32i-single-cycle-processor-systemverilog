@@ -13,49 +13,49 @@ The processor follows a classic single-cycle architecture where each instruction
 
 
 ## Microarchitecture Blocks Implemented  
-### Instruction Memory  
+### Instruction Memory (IF Stage)     
 RTL Module <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.sv">instruction_memory.sv </a>    
 Block Diagram <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_BLOCK.png"> instruction_memory_block </a>    
 Internal Architecture <a href = "INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_UNIT.png"> instruction_memory_unit </a>  
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### Instruction Fetch            
+### Instruction Fetch (IF Stage)              
 RTL Module <a href = "FETCH/FETCH.sv"> fetch.sv </a>        
 Block Diagram <a href = "FETCH/FETCH_BLOCK.png"> fetch_block </a>       
 Internal Architecture <a href = "FETCH/FETCH_UNIT.png"> fetch_unit </a>       
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### Decode            
+### Decode (ID Stage)               
 RTL Module <a href = "DECODE/DECODE.sv"> Decode.sv </a>        
 Block Diagram <a href = "DECODE/DECODE_STAGE_BLOCK.png"> Decode_block </a>       
 Internal Architecture <a href = "DECODE/DECODE_BLOCK_UNIT.png"> Decode_unit </a>          
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### Register File             
+### Register File (ID Stage)             
 RTL Module <a href = "REGISTER_FILE/REGISTER_FILE.sv"> Register_file.sv </a>        
 Block Diagram <a href = "REGISTER_FILE/REGISTER_FILE.png"> Register_file_block </a>       
 Internal Architecture <a href = "REGISTER_FILE/REGISTER_FILE_UNIT.png"> Register_file_unit </a>          
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### Execute ( ALU )           
+### Execute - (ALU) (EX Stage)            
 RTL Module <a href = "ALU/ALU.sv"> ALU.sv </a>        
 Block Diagram <a href = "ALU/ALU_BLOCK.png"> ALU_block </a>       
 Internal Architecture <a href = "ALU/ALU_UNIT.png"> ALU_unit </a>          
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### Data Memory      
+### Data Memory (EX Stage)      
 RTL Module <a href = "DATA_MEMORY/DATA_MEMORY.sv"> Data_Memory.sv </a>        
 Block Diagram <a href = "DATA_MEMORY/DATA_,MEMORY_BLOCK.png"> Data_Memory_block </a>       
 Internal Architecture <a href = "DATA_MEMORY/DATA_,MEMORY_UNIT.png"> Data_Memory_unit </a>    
 
 ------------------------------------------------------------------------------------------------------------------   
 
-### Branch Control
+### Branch Control (EX Stage)
 RTL Module <a href = "BRANCH_CONTROL/BRANCH_CONTROL.sv"> Branch_Control.sv </a>        
 Block Diagram <a href = "BRANCH_CONTROL/BRANCH_CONTROL_BLOCK.png"> Branch_Control_block </a>       
 Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch_Control_unit </a>    
@@ -69,7 +69,7 @@ Internal Architecture <a href = "BRANCH_CONTROL/BRANCH_CONTROL_UNIT.png"> Branch
 
  ------------------------------------------------------------------------------------------------------------------
   
-All modules were developed independently and integrated into a complete CPU.  
+Each module was designed, verified independently, and then integrated into a fully functional single-cycle RV32I processor.   
 
 ## Instruction Set Support (RV32I)  
 ![ISA](https://github.com/user-attachments/assets/169ee185-f026-4bfe-8b43-962e513d8f94)        
